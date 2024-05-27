@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Gym T-Shirt",
+        "description": "Comfortable and breathable gym t-shirt.",
+        "price": 19.99,
+        "image": "img/gym-tshirt.jpg",
+        "category": "tshirts"
+    },
+    {
+        "id": 2,
+        "name": "Gym Hoodie",
+        "description": "Warm and cozy gym hoodie.",
+        "price": 39.99,
+        "image": "img/gym-hoodie.jpg",
+        "category": "hoodies"
+    },
+    {
+        "id": 3,
+        "name": "Gym Shorts",
+        "description": "Lightweight and durable gym shorts.",
+        "price": 24.99,
+        "image": "img/gym-shorts.jpg",
+        "category": "others"
+    }
+]
