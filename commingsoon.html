@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            color: #FF0000;
+            font-family: Arial, sans-serif;
+            font-size: 3em;
+            text-align: center;
+            user-select: none; 
+          -webkit-user-select: none; 
+          -moz-user-select: none; 
+             cursor: allowed;
+        }
+        .novaflex {
+            font-size: 0.3em;
+        }
+        /* Make Images Responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container for Content */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <strong>COMING SOON</strong>
+    <div class="novaflex">Nova Flex</div>
+</body>
+</html

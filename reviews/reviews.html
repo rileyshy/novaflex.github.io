@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extinction.cc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            border-bottom: 1px solid #333;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header nav a:hover {
+            color: #FF0000;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        /*Reviews section*/
+        .reviews {
+    padding: 50px 20px;
+    background-color: #111; /* Dark background for contrast */
+    color: #fff;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 36px;
+    color: #FF0000; /* Vibrant green for title */
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review {
+    background-color: #222; /* Slightly lighter background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Card shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.review:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* More intense shadow on hover */
+}
+
+.review-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-size: 16px;
+    color: #ccc; /* Muted color for author name */
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 30px 10px;
+    }
+
+    .reviews h2 {
+        font-size: 28px;
+    }
+
+    .review-text {
+        font-size: 16px;
+    }
+
+    .review-author {
+        font-size: 14px;
+    }
+}
+
+        .btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            border-top: 1px solid #333;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #FF0000;
+        }
+        .how-it-works {
+    background-color: #111; /* Dark background for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.how-it-works img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded corners for image */
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.step:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.step-number {
+    font-size: 32px;
+    color: #FF0000; /* Vibrant green for numbers */
+    font-weight: bold;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Circle shadow */
+}
+
+.step-description {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.step-description strong {
+    color: #FF0000; /* Highlighting key points */
+}
+
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-number {
+        margin-bottom: 10px;
+    }
+
+    .step-description {
+        text-align: center;
+    }
+}
+.owner-text {
+    background-color: #222; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-left: 5px solid #4CAF50; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
+}
+
+.owner-message {
+    font-size: 18px; 
+    color: #fff; 
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+}
+
+.owner-name {
+    font-size: 16px; 
+    color: #666; 
+    font-style: italic; 
+    text-align: right; 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Nova Flex</div>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-list">
+            <div class="review">
+                <p class="review-text">CURRENTLY NONE</p>
+                <p class="review-author"></p>
+            </div>
+
+            <div class="owner-text">
+                <p class="owner-message">To leave a review, go to our discord and open a ticket</p>
+                <p class="owner-name">- Nova Flex Owner</p>
+            </div>
+            
+    </section>
+</html>
